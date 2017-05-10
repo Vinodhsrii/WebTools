@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Beongame</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Poorani1503</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.beongame.top.pojo.Person" />
+		<mapping class="com.beongame.top.pojo.Academy" />
+		<mapping class="com.beongame.top.pojo.Sports" />
+		<mapping class="com.beongame.top.pojo.Enduser" />
+		<mapping class="com.beongame.top.pojo.Serviceprovider" />
+		<mapping class="com.beongame.top.pojo.Booking"/>
+        <mapping class="com.beongame.top.pojo.SportsAcademy" /> 
+	</session-factory>
+</hibernate-configuration>
